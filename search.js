@@ -10,7 +10,10 @@ $(document).ready(() => {
  });
  
  function getMovies(searchText){
+    //  window.location = 'index2.html';
+    
     axios.get('http://www.omdbapi.com/?apikey=3e3b8fec&s='+searchText)
+     
      .then((response) => {
         console.log(response);
         let movies = response.data.Search;
@@ -20,6 +23,7 @@ $(document).ready(() => {
             <div class="col-md-3">
                 <div class="well text-center">
                 <img src="${movie.Poster}">
+               
                 <h5>${movie.Title}</h5>
                 <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Info</a>
                 </div>
@@ -80,7 +84,7 @@ $(document).ready(() => {
                     ${movie.Plot}
                     <hr>
                     <a href="http://www.imdb.com/title/${movie.imdbID}" target="_ blank" class="btn btn-primary">View IMDB</a>
-                    <a href="search.html" class="btn-search btn btn-default">Go Back to Search</a>
+                    <a href="search2.html" class="btn-search btn btn-default">Go Back to the Index Page</a>
                 </div>
             </div>
         `;
