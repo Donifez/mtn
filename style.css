@@ -77,60 +77,11 @@ border-bottom-left-radius: 111px;
     font-weight: bold;
 }
 
-
-/* newly Added css */
-
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+#movies{
+   
+    display: flex;
+    flex-direction: row;
 }
-
-.input_first_innerDiv{
-     background: transparent;
-      border-top: transparent !important;
-      border-left: transparent !important;
-      border-right: transparent !important;
-      border-bottom: transparent !important;
-      font-weight: 200;
-      font-size: 40px;
-      padding-left: 40px;
-      height: 10vh;
-      margin-left: 40px;
-      margin-top: 25px;
-      outline: none;
-}
-
-.first_innerDiv{
-    height:20vh;
-    background: rgb(101,46,112);
-    background: linear-gradient(90deg, rgba(101,46,112,1) 21%,     rgba(27,41,111,1) 60%);  
-      
-}
-.second_innerDiv{
-  background: rgb(92, 102, 150);
- 
-}
-
-body {
-    background-color: rgb(134, 152, 240);
-}
-
-
-
-#movies img, #movie img {
-  width: 100%;
-  height: 290px;
-}
-@media(min-width:960px) {
-#movies .col-md-3 .well {
-  height: 450px;
-}
-
-#movies .col-md-3 img {
-  height: 310px;
-}
-} */
 
 .mtn-bg--black{
 background: #000;
@@ -139,3 +90,43 @@ background: #000;
     color:white;
     padding-top: 10%;
 }
+
+@media(min-width:1024px) {
+   .mtn-banner__bg img {
+      width:100%; 
+    }
+ 
+}
+
+@media(min-width:768px) {
+    .mtn-banner__bg img {
+       width:100%;
+        
+     }
+     .navbar{
+         width:100%;
+     }
+
+  
+  
+ }
+
+ @media(min-width:480px) {
+    .mtn-banner__bg img {
+       width:100%;
+        
+     }
+   
+    
+  
+ }
+
+ @media(min-width:320px) {
+    .mtn-banner__bg img {
+       width:100%;
+        
+     }
+    
+  
+   
+ }
